@@ -1,4 +1,5 @@
 import pickle as pickle
 import pandas as pd 
 df=pd.read_pickle('playerdata')
-# print(df['club'].unique())
+print(df['club'].unique())
+print(df.head)

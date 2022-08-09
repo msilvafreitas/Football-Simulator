@@ -9,7 +9,7 @@ from itertools import permutations
 import copy
 import pprint
 class League:
-    country={1:'spain',2:'england',3:'germany',4:'italy',5:'france'}
+    country={1:'spain',2:'england',3:'germany',4:'italy'}
     def __init__(self,option):
         self.players={}
         self.teams={}
