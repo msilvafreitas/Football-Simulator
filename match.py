@@ -60,8 +60,8 @@ class Match:
               e=Event(event,side,minute)
               e.setSides(home_side,away_side)
               self.addEvent(e)
-        # if minute == 45:
-          # self.showStats()
+        if minute == 45:
+          self.showStats()
           # input('Press any key to start next half')
 
 

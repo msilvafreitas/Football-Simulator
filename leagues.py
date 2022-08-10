@@ -1,3 +1,4 @@
+from distutils.log import debug
 from teams import *
 import random
 import time
@@ -10,6 +11,7 @@ import copy
 import pprint
 class League:
     country={1:'spain',2:'england',3:'germany',4:'italy'}
+    
     def __init__(self,option):
         self.players={}
         self.teams={}
@@ -72,6 +74,8 @@ class League:
     def simMatch(self,home_team_name,away_team_name):
         home_team=self.teams[home_team_name]
         away_team=self.teams[away_team_name]
+        # if(home_team == managed or away_team == managed):
+          #  input()
         match=m.Match(home_team,away_team)
         match.showResult()
         self.updateTable(match)
@@ -104,6 +108,8 @@ class League:
     
     def simWeek(self):
         for h,a in self.schedule[self.week]:
+            input()
+            self.showPlayers
             self.simMatch(h,a)
         self.week+=1
         pass
